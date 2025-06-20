@@ -8,7 +8,7 @@ import hashlib
 from utils import send_email, init_database
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'
+app.secret_key = os.environ.get('SECRET_KEY', 'your_secret_key_here')
 
 CONFIG_FILE = 'config.json'
 
@@ -228,4 +228,5 @@ def approve_user(user_id):
 
 if __name__ == '__main__':
     init_database()
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
