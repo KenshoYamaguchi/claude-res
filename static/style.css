@@ -1,0 +1,196 @@
+/* コワーキングスペース予約システム CSS */
+
+body {
+    font-family: 'Noto Sans JP', Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+}
+
+/* カレンダーのスタイル */
+#calendar {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.fc-event {
+    cursor: pointer;
+}
+
+.fc-event-title {
+    font-size: 0.9em;
+}
+
+/* フォームのスタイル */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn {
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* アラートのスタイル */
+.alert {
+    border: none;
+    border-radius: 8px;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+    color: #055160;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+/* テーブルのスタイル */
+.table {
+    background-color: white;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    #calendar {
+        font-size: 0.9em;
+    }
+}
+
+/* ログイン・登録フォーム */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.login-form, .register-form {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+/* 予約フォームの改善 */
+.reservation-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.reservation-form label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* カレンダーイベントの色分け */
+.fc-event.user-event {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.fc-event.other-event {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* 管理者画面のスタイル */
+.admin-section {
+    margin-top: 30px;
+}
+
+.admin-section h3 {
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+/* 統計情報のスタイル */
+.stats-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.stats-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.stats-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* フッター */
+.footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+/* ローディング表示 */
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* カスタムアラート */
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+    min-width: 300px;
+}

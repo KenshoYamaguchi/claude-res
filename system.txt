@@ -1,0 +1,42 @@
+コワーキングスペースの予約システムを作る。
+
+
+flaskを使用し、webサーバーにデプロイする。
+
+
+誰でもアクセスはできて、会員登録を申し込み、承認されると、予約ができるようになる。
+
+
+
+C:\CoworkingLite\
+│
+├── [app.py](http://app.py/)
+├── coworking.db
+├── config.json
+├── [utils.py](http://utils.py/)
+│
+├── templates\
+│   └── index.html
+│
+├── static\
+│   ├── style.css
+│   └── calendar.js
+│
+├── [README.md](http://readme.md/)
+└── run_server.bat
+
+| パス | 用途 |
+| --- | --- |
+| `app.py` | Flaskアプリ本体。ルーティングやDB接続、予約処理を記述 |
+| `coworking.db` | SQLiteデータベースファイル。会員情報と予約情報を格納 |
+| `config.json` | メール送信設定や予約ルールなどの構成（SMTPホスト、送信元メールなど） |
+| `utils.py` | メール送信処理やDB補助関数などを定義（コード整理用） |
+| `templates/index.html` | トップページ（カレンダー表示と予約フォームを統合） |
+| `static/style.css` | 見た目の調整用CSS（必要最低限） |
+| `static/calendar.js` | FullCalendarの初期化やイベント取得用JavaScript |
+| `README.md` | システムの概要・セットアップ手順を記述 |
+| `run_server.bat`（任意） | Windowsサーバー用の起動スクリプト（Flaskを起動する） |
+
+
+
+

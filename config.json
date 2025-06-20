@@ -1,0 +1,23 @@
+{
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_username": "your_email@gmail.com",
+  "smtp_password": "your_app_password",
+  "admin_email": "admin@example.com",
+  "email_notifications": true,
+  "reservation_rules": {
+    "max_hours_per_day": 8,
+    "advance_booking_days": 30,
+    "min_booking_hours": 1,
+    "operating_hours": {
+      "start": "09:00",
+      "end": "18:00"
+    },
+    "closed_days": ["sunday"]
+  },
+  "app_settings": {
+    "app_name": "コワーキングスペース予約システム",
+    "timezone": "Asia/Tokyo",
+    "language": "ja"
+  }
+}
