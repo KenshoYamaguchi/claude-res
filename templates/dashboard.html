@@ -34,15 +34,75 @@
             {% endif %}
         {% endwith %}
 
-        <div class="row">
+        <div class="row mb-4">
             <div class="col-12">
                 <h2>ダッシュボード</h2>
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5>システム概要</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>コワーキングスペース予約システムへようこそ。このシステムでは以下の機能をご利用いただけます：</p>
+                        <ul>
+                            <li>カレンダーから空き状況の確認</li>
+                            <li>希望の日時での予約作成</li>
+                            <li>営業時間：月曜日〜土曜日 9:00〜18:00</li>
+                            <li>最小予約時間：1時間、最大予約時間：8時間/日</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
                         <h5>予約カレンダー</h5>
                     </div>
                     <div class="card-body">
                         <div id="calendar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>新規予約</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="reservationForm">
+                            <div class="mb-3">
+                                <label for="date" class="form-label">日付</label>
+                                <input type="date" class="form-control" id="date" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="startTime" class="form-label">開始時間</label>
+                                <select class="form-select" id="startTime" required>
+                                    <option value="">選択してください</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="endTime" class="form-label">終了時間</label>
+                                <select class="form-select" id="endTime" required>
+                                    <option value="">選択してください</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="purpose" class="form-label">利用目的</label>
+                                <textarea class="form-control" id="purpose" rows="3" required placeholder="会議、作業、打ち合わせなど"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">予約する</button>
+                        </form>
                     </div>
                 </div>
             </div>
