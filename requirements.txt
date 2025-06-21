@@ -18,4 +18,4 @@ Flask>=2.3.0
 # conda>=23.0.0
 
 
-実際に必要なのはconda python Flask
+#実際に必要なのはconda python Flask
