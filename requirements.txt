@@ -1,3 +1,21 @@
-python-3.11
-Flask==2.3.2
-Werkzeug==2.3.6
+# Python version requirement
+python>=3.8
+
+# Core web framework
+Flask>=2.3.0
+
+# Standard library dependencies (included with Python)
+# sqlite3 - built-in
+# smtplib - built-in  
+# json - built-in
+# os - built-in
+# datetime - built-in
+# functools - built-in
+# hashlib - built-in
+# email.mime - built-in
+
+# Optional: For conda environment management
+# conda>=23.0.0
+
+
+実際に必要なのはconda python Flask
