@@ -1,8 +1,8 @@
 # Python version requirement
-python>=3.10.18
+#python>=3.10.18
 
 # Core web framework
-Flask>=3.1.1
+#Flask>=3.1.1
 
 # Standard library dependencies (included with Python)
 # sqlite3 - built-in
